@@ -1,0 +1,156 @@
+[
+  {
+    "id": "gemini-argon",
+    "type": "최신 동향",
+    "publisher": "Google DeepMind",
+    "date": "2026.09.30 발표",
+    "title": "새 모델 발표와 내 계정의 사용 가능 여부는 다릅니다",
+    "summary": "Google은 Gemini 4 Argon을 발표하면서 긴 전문 업무를 처리하는 능력을 소개했습니다. 발표 시점에는 신뢰할 수 있는 보안 분야 사용자에게 먼저 제공하고, 일반 개발자·기업·소비자에게 공개하기 전 검증을 진행한다고 설명했습니다. 모델 이름을 외우는 것보다 현재 내 계정에서 쓸 수 있는 기능을 확인하는 연습에 연결합니다.",
+    "question": "발표 기사에서 ‘지금 제공’과 ‘앞으로 제공’을 어떻게 구분할 수 있을까요?",
+    "lessons": [4, 5],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+  },
+  {
+    "id": "korea-ai-adoption",
+    "type": "기사",
+    "publisher": "연합뉴스",
+    "date": "2026.09.28 기사",
+    "title": "한국 생성형 AI 사용 비중 40.6%…수치를 어떻게 읽을까?",
+    "summary": "연합뉴스는 Microsoft AI Economy Institute의 2026년 2분기 보고서를 인용해 한국의 생성형 AI 사용 비중을 40.6%, 세계 12위로 보도했습니다. 이 수치는 15~64세 인구를 대상으로 사용 데이터를 보정해 추정한 값입니다. 전체 국민의 비율이나 AI 활용 능력 점수로 해석하지 않도록, 수치·대상·기간·조사 방법을 함께 읽어 봅니다.",
+    "question": "AI를 자주 사용하는 것과 AI 답변을 정확히 검증하는 것은 어떤 점에서 다를까요?",
+    "lessons": [1, 4, 5],
+    "url": "https://www.yna.co.kr/view/AKR20260928033900017"
+  },
+  {
+    "id": "vids-omni",
+    "type": "최신 동향",
+    "publisher": "Google Workspace",
+    "date": "2026.09.23 발표",
+    "title": "Vids의 AI 영상 생성, 장면 길이와 1080p까지",
+    "summary": "Google은 Vids에 Gemini Omni 1.1 Flash를 적용하고, Google 계정 사용자의 무료 AI 영상 생성과 장면 연장·길이 지정·1080p 기능을 안내했습니다. 생성량과 기관의 사용 설정은 별도로 확인합니다. 기능이 늘어나도 수업 영상에서는 장면마다 전달할 정보, 자막 가독성, 실제 활동과 생성 장면의 구분을 먼저 설계합니다.",
+    "question": "종이 다리 활동 안내 영상에서 실제 촬영이 필요한 장면과 생성 이미지로 충분한 장면은 무엇일까요?",
+    "lessons": [7, 8],
+    "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids/"
+  },
+  {
+    "id": "connected-apps",
+    "type": "최신 동향",
+    "publisher": "Google Gemini",
+    "date": "2026.09.23 발표",
+    "title": "여러 앱을 연결할 때는 실행 범위부터 확인합니다",
+    "summary": "Gemini는 업무관리·문서·창작 서비스와 연결하는 앱을 추가한다고 발표했습니다. 제공 여부는 서비스와 계정에 따라 확인해야 합니다. 이 소식은 원고의 ‘기준정보 하나를 여러 결과물에 연결하기’와 이어집니다. 연동을 설계할 때에는 읽을 자료, 바꿀 자료, 공유할 대상, 실행 전에 검토할 내용을 구분해 적습니다.",
+    "question": "자료를 읽는 권한과 자료를 수정·공유하는 권한을 같은 수준으로 주어도 될까요?",
+    "lessons": [3, 9, 10],
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/"
+  },
+  {
+    "id": "notebook-study",
+    "type": "최신 동향",
+    "publisher": "Google Gemini Notebook",
+    "date": "2026.09.15 발표",
+    "title": "원자료를 퀴즈와 학습 자료로 바꾸는 도구",
+    "summary": "Gemini Notebook은 퀴즈·플래시카드·짧은 영상 등 학습 도구를 확장하는 소식을 발표했습니다. 연수에서는 넣은 원자료를 바탕으로 질문과 문항을 만들고, 정답의 근거를 다시 찾아보는 데 연결합니다. 생성된 자료가 원문에 없는 사실을 더하지 않았는지, 초등학생이 이해할 표현인지 확인합니다.",
+    "question": "AI가 만든 문항 한 개를 골라 정답의 근거가 있는 원문 위치를 찾을 수 있나요?",
+    "lessons": [5, 6],
+    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/"
+  },
+  {
+    "id": "gemini-windows",
+    "type": "최신 동향",
+    "publisher": "Google Gemini",
+    "date": "2026.09.10 발표",
+    "title": "Windows에서도 Gemini를 바로 여는 방식",
+    "summary": "Google은 Windows용 Gemini 앱 출시를 알렸습니다. 웹 브라우저와 데스크톱 앱은 접근 방식이 달라도 사용하는 계정과 자료의 성격을 확인하는 습관이 필요합니다. 이번 연수의 요청문은 웹에서도 사용할 수 있으므로, 사용 가능한 환경을 골라 같은 기준정보로 결과를 비교해 봅니다.",
+    "question": "공용 컴퓨터에서 앱을 사용한 뒤 계정과 열어 둔 자료를 어떻게 정리할까요?",
+    "lessons": [1, 3, 4],
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/"
+  },
+  {
+    "id": "notebook-name",
+    "type": "최신 동향",
+    "publisher": "Google",
+    "date": "2026.07.16 발표",
+    "title": "NotebookLM에서 Gemini Notebook으로",
+    "summary": "Google은 NotebookLM의 이름을 Gemini Notebook으로 변경한다고 발표했습니다. 원자료를 모아 질문하고 학습 자료를 만드는 독립 서비스라는 용도는 이어집니다. 메뉴와 이름이 달라졌을 때에도 원자료 선택, 근거 확인, 결과 검수라는 학습 순서를 따라가 봅니다.",
+    "question": "도구 이름이 바뀌어도 내 수업자료 제작 과정에서 유지할 단계는 무엇일까요?",
+    "lessons": [4, 6],
+    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+  },
+  {
+    "id": "nano-banana",
+    "type": "최신 동향",
+    "publisher": "Google DeepMind",
+    "date": "2026.02.26 발표",
+    "title": "이미지 생성이 좋아져도 관찰 자료는 따로 검수합니다",
+    "summary": "Google은 Nano Banana 2에서 이미지 편집, 대상의 일관성, 이미지 안의 글자 표현 등을 개선했다고 소개했습니다. 포스터 배경을 만드는 데 활용하되, 과학 학습지의 구조·수량·비교 조건은 사람이 확인합니다. 날짜와 장소 같은 확정 문구는 편집 도구에서 직접 넣는 방식도 함께 연습합니다.",
+    "question": "생성 이미지의 종이 다리와 실제 실험에 쓰는 종이 다리가 다르면 어떤 오해가 생길까요?",
+    "lessons": [6, 7],
+    "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"
+  },
+  {
+    "id": "paper-helicopter",
+    "type": "수업 원자료",
+    "publisher": "NASA JPL Education",
+    "date": "2024.10.15 원문 갱신",
+    "title": "종이 헬리콥터: 한 조건씩 바꾸어 비교하기",
+    "summary": "종이 헬리콥터를 만들고 모양이나 크기 등 설계를 바꾸어 낙하와 회전을 비교하는 활동입니다. 도안과 조립 순서는 원문에서 확인하고, AI에는 대상 학년과 요약 범위를 알려 설명문을 요청해 봅니다. 연수용으로 바꿀 때에는 학생이 높은 곳에 올라가지 않도록 낙하 높이와 활동 환경을 조정합니다.",
+    "question": "날개 길이를 비교할 때 종이 종류와 떨어뜨리는 높이를 같이 바꾸면 결과를 설명하기 쉬울까요?",
+    "lessons": [5, 6],
+    "url": "https://www.jpl.nasa.gov/edu/resources/project/make-a-paper-mars-helicopter-2/"
+  },
+  {
+    "id": "paper-bridge",
+    "type": "수업 원자료",
+    "publisher": "Science Buddies",
+    "date": "2026.10.09 확인",
+    "title": "종이 다리: 모양과 견디는 무게의 관계",
+    "summary": "종이를 접어 다리를 만들고 동전을 올려 설계별로 견디는 무게를 비교하는 활동입니다. 원문은 저학년용 수업 목표와 준비물을 제공합니다. 우리 프로그램에 맞게 학년·시간·수량을 조정하고, 비교할 모양과 유지할 조건을 기준정보 카드에 적어 봅니다.",
+    "question": "평평한 모양과 주름진 모양을 비교할 때 무엇을 같게 맞추어야 할까요?",
+    "lessons": [6, 7, 10],
+    "url": "https://www.sciencebuddies.org/teacher-resources/lesson-plans/paper-bridge-design"
+  },
+  {
+    "id": "scratch-starters",
+    "type": "수업 원자료",
+    "publisher": "Scratch Team",
+    "date": "2026.10.09 확인",
+    "title": "Scratch 예제: 완성본보다 바꿔 볼 부분 찾기",
+    "summary": "Scratch 팀의 시작 프로젝트는 애니메이션·게임·이야기 등 여러 유형의 예제를 제공합니다. 프로젝트 안을 열어 구조를 살펴보고 자기 아이디어를 추가할 수 있습니다. AI로 영어 안내를 번역할 때에는 블록 이름과 활동 순서가 실제 화면에 맞는지 확인합니다.",
+    "question": "예제를 그대로 실행하는 활동에 ‘조건 하나 바꾸고 결과 설명하기’를 더하면 무엇을 배울 수 있을까요?",
+    "lessons": [5, 6],
+    "url": "https://scratch.mit.edu/help/starter_projects/"
+  },
+  {
+    "id": "account-security",
+    "type": "도움말",
+    "publisher": "Google 계정 고객센터",
+    "date": "2026.10.09 확인",
+    "title": "2단계 인증과 복구 방법을 함께 준비하기",
+    "summary": "Google은 2단계 인증, 패스키, 보안 키, 인증 코드, 복구 코드 등의 인증 방법을 안내합니다. 휴대전화 하나에만 의존하지 않도록 사용할 수 있는 복구 방법을 확인합니다. 학교·기관 계정은 관리자의 설정도 살펴봅니다.",
+    "question": "휴대전화를 잃어버렸을 때 사용할 수 있는 인증 방법을 미리 준비했나요?",
+    "lessons": [1, 3],
+    "url": "https://support.google.com/accounts/answer/185839?hl=ko"
+  },
+  {
+    "id": "drive-sharing",
+    "type": "도움말",
+    "publisher": "Google Drive 고객센터",
+    "date": "2026.10.09 확인",
+    "title": "자료의 용도에 맞는 공유 권한 고르기",
+    "summary": "Drive의 뷰어·댓글 작성자·편집자는 할 수 있는 일이 다릅니다. 폴더 권한은 안의 파일에 영향을 줄 수 있으므로 상위 폴더와 일반 액세스 설정도 확인합니다. 완성 자료를 전달할 때에는 받는 사람의 계정으로 열리는지 점검합니다.",
+    "question": "완성 안내문을 받는 사람에게 편집 권한이 꼭 필요한가요?",
+    "lessons": [2, 3, 9, 10],
+    "url": "https://support.google.com/drive/answer/2494822?hl=ko"
+  },
+  {
+    "id": "gemini-privacy",
+    "type": "도움말",
+    "publisher": "Gemini 앱 고객센터",
+    "date": "2026.10.09 확인",
+    "title": "AI에 넣을 자료와 빼야 할 자료 정하기",
+    "summary": "Gemini의 개인정보 안내는 데이터 사용과 일부 채팅의 인적 검토를 설명합니다. 학생 이름·연락처·상담 내용처럼 공개되어서는 안 되는 정보는 연습에 넣지 않습니다. 실무에서는 쓰는 계정과 기관의 이용 조건을 확인하고, 공개 자료나 비식별 예시로 요청문을 작성합니다.",
+    "question": "출결부를 AI에 보여 주지 않고도 집계 수식을 질문할 수 있도록 예시 데이터를 어떻게 만들까요?",
+    "lessons": [4, 5, 9, 10],
+    "url": "https://support.google.com/gemini/answer/13594961?hl=ko"
+  }
+]

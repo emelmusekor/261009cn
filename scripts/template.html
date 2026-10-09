@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173fd7">
+  <meta name="description" content="초등방과후학교 강사를 위한 AI 직무역량 10차시 연수 원고. Google 업무 도구, Gemini, 수업자료, 이미지·영상, 업무관리와 통합 프로젝트를 읽고 실습합니다.">
+  <title>AI 직무역량 연수 · 10차시 원고와 실습</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173fd7'/%3E%3Cpath d='M8 8h7v17H8zm10 0h6v17h-6z' fill='white'/%3E%3Cpath d='M10 12h3m7 0h2M10 16h3m7 0h2' stroke='%23173fd7' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="topbar">
+    <a href="#manuscript" class="brand"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span>AI 직무역량<span class="brand-sub">연수 원고</span></span></a>
+    <nav class="top-links" aria-label="주요 메뉴"><a href="#manuscript">원고</a><a href="#practice">실습</a><a href="#readings">읽을거리</a><a href="#tools">도구</a></nav>
+    <div class="top-actions"><button type="button" id="open-search" class="search-trigger"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><span>원고 검색</span><kbd>/</kbd></button><button type="button" id="open-menu" class="menu-trigger" aria-label="차시 목차 열기"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div>
+  </header>
+  <aside class="sidebar" aria-label="차시 목차"><div class="sidebar-title"><span>연수 목차</span><span>10차시</span></div><nav>{{NAV}}</nav><div class="sidebar-footer">2026.10.09–10.10<br>호서대학교 앵커 늘봄학교<br>충남 1권역</div></aside>
+  <div class="page-grid">
+  <main id="main">
+    <section id="manuscript" class="course-start">
+      <p class="eyebrow">초등방과후학교 강사 역량강화 연수</p>
+      <h1>AI 직무역량<span>원고와 실습</span></h1>
+      <p class="start-intro">내 프로그램 하나로 문서와 수업자료를 만들고,<br class="desktop-only"> 이미지·영상·업무관리 자료를 하나의 꾸러미로 묶습니다.</p>
+      <div class="course-meta"><span>10차시</span><span>2일 과정</span><span>2026.10.09–10.10</span></div>
+      <div class="start-actions"><a class="button primary" href="#lesson-01">01차시 원고 읽기</a><a class="button secondary-button" href="#practice">기준정보 카드 만들기</a></div>
+      <div class="course-guide"><div><span>1일차</span><p>계정 · 메일 · Drive · Gemini · 업무 문서</p></div><div><span>2일차</span><p>수업자료 · 이미지 · 영상 · 업무관리 · 꾸러미</p></div></div>
+    </section>
+    {{LESSONS}}
+    <section id="practice" class="extra-section">
+      <div class="extra-heading"><p class="eyebrow">내 프로그램으로 해보기</p><h2>실습 도구</h2><p>기준정보를 적고, 만들 자료에 맞는 요청문을 골라 사용합니다.</p></div>
+      <div class="workspace">
+        <div class="fact-panel"><div class="panel-heading"><h3>기준정보 카드</h3><button type="button" id="load-example" class="small-button">예시 채우기</button></div><p class="secondary">확정한 정보만 적습니다. 학생 이름·연락처·민감 정보는 입력하지 않습니다.</p>
+          <form id="fact-form" autocomplete="off">
+            <div class="field"><label for="fact-program">프로그램 이름</label><input id="fact-program" name="program" placeholder="예: 늘봄 과학교실"></div>
+            <div class="field-row"><div class="field"><label for="fact-grade">대상 학년</label><input id="fact-grade" name="grade" placeholder="예: 초등 3~4학년"></div><div class="field"><label for="fact-count">인원</label><input id="fact-count" name="count" inputmode="numeric" placeholder="예: 15명"></div></div>
+            <div class="field"><label for="fact-activity">대표 활동</label><input id="fact-activity" name="activity" placeholder="예: 종이 다리 모양별 비교"></div>
+            <div class="field"><label for="fact-goal">학습목표</label><textarea id="fact-goal" name="goal" rows="2" placeholder="예: 관찰한 결과를 비교해 모양에 따른 차이를 설명할 수 있다."></textarea></div>
+            <div class="field"><label for="fact-materials">준비물·수량</label><textarea id="fact-materials" name="materials" rows="2" placeholder="예: A4 용지 30장, 100원 동전 60개, 책 8권"></textarea></div>
+            <div class="field-row"><div class="field"><label for="fact-date">일시</label><input id="fact-date" name="date" placeholder="미정이면 비워 둡니다"></div><div class="field"><label for="fact-place">장소</label><input id="fact-place" name="place" placeholder="미정이면 비워 둡니다"></div></div>
+            <div class="field-row"><div class="field"><label for="fact-duration">수업 시간</label><input id="fact-duration" name="duration" placeholder="예: 40분"></div><div class="field"><label for="fact-deadline">회신 기한</label><input id="fact-deadline" name="deadline" placeholder="미정이면 비워 둡니다"></div></div>
+            <div class="field"><label for="fact-contact">문의·회신 방법</label><input id="fact-contact" name="contact" placeholder="예: 학교 늘봄 담당자에게 메일 회신"></div>
+            <div class="field"><label for="fact-safety">안전 약속</label><textarea id="fact-safety" name="safety" rows="2" placeholder="예: 동전을 입에 넣지 않고 책을 높이 쌓지 않는다."></textarea></div>
+          </form>
+          <div class="fact-actions"><button type="button" id="download-facts" class="button secondary-button">카드 내려받기</button><button type="button" id="reset-facts" class="small-button">입력 지우기</button></div><p class="local-note">입력 내용은 이 브라우저 화면에서만 사용합니다. 새로고침 전에 카드를 내려받아 보관합니다.</p>
+        </div>
+        <div class="prompt-panel"><label class="select-label" for="prompt-type">만들 자료</label><select id="prompt-type"><option value="intro">04차시 · 자기소개문</option><option value="mail">05차시 · 협조 요청 메일</option><option value="notice">05차시 · 가정통신문 문안</option><option value="lesson">06차시 · 수업안</option><option value="worksheet">06차시 · 학습지</option><option value="rubric">06차시 · 루브릭</option><option value="poster">07차시 · 포스터 배경</option><option value="storyboard">08차시 · 30초 스토리보드</option><option value="database">09차시 · 업무 DB 설계</option><option value="package">10차시 · 꾸러미 안내</option></select>
+          <div class="prompt workspace-prompt"><div class="prompt-head"><span>내 기준정보로 만든 요청문</span><button class="copy-button" type="button" data-copy="generated-prompt">복사</button></div><pre id="generated-prompt"></pre></div>
+          <div class="prompt-actions"><a class="button primary" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Gemini 열기</a><button class="button secondary-button" type="button" id="download-prompt">요청문 내려받기</button></div><p class="secondary">요청문을 복사해 Gemini 입력창에 붙여 넣습니다. AI 답변의 사실·수량·학년 수준은 원자료와 대조합니다.</p>
+        </div>
+      </div>
+      <section class="change-tool" aria-labelledby="change-title"><div><p class="eyebrow">10차시 연결 실습</p><h3 id="change-title">정보 하나가 바뀌면 어디를 고칠까?</h3><p>바뀐 정보를 고르면 함께 살펴야 할 자료와 수정 위치가 나타납니다.</p><label for="change-kind">바뀐 기준정보</label><select id="change-kind"><option value="date">수업 날짜·장소</option><option value="materials">준비물·수량</option><option value="grade">대상 학년·인원</option><option value="goal">학습목표·활동</option></select></div><div id="change-result" aria-live="polite"></div></section>
+      <section class="downloads" aria-labelledby="download-title"><h3 id="download-title">연습 자료 내려받기</h3><p>실제 학생 정보 없이 연습하도록 만든 예시입니다. CSV는 Google Sheets에서 가져올 수 있습니다. 출결부는 집계 수식을 포함하며, 교차 검수표에는 인원 불일치와 장소 미기록을 연습용으로 넣었습니다.</p><div class="download-list"><a href="assets/09_출결부_연습.csv" download><span>09차시</span><strong>출결부 연습</strong><span>가명 · 출결 예시 · 집계 수식</span><small>CSV</small></a><a href="assets/09_서류목록_연습.csv" download><span>09차시</span><strong>서류 관리 목록</strong><span>Notion 가져오기용 속성 예시</span><small>CSV</small></a><a href="assets/10_교차검수_연습.csv" download><span>10차시</span><strong>교차 검수표</strong><span>기준정보와 자료별 대조</span><small>CSV</small></a></div></section>
+    </section>
+    {{READINGS}}
+    <section id="tools" class="extra-section"><div class="extra-heading"><p class="eyebrow">필요한 도구 바로 열기</p><h2>도구 모음</h2><p>연수에서 사용한 계정으로 로그인했는지 프로필 주소를 확인합니다.</p></div><div class="tool-list">
+      <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">M</span><div><h3>Gmail</h3><p>업무 메일 · 02·05차시</p></div><span>열기</span></a>
+      <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">D</span><div><h3>Google Drive</h3><p>자료 보관과 공유 · 01–10차시</p></div><span>열기</span></a>
+      <a href="https://docs.new/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">W</span><div><h3>Google 문서</h3><p>기준정보 · 업무 문서 · 수업자료</p></div><span>열기</span></a>
+      <a href="https://sheets.new/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">S</span><div><h3>Google Sheets</h3><p>출결부와 집계 · 09차시</p></div><span>열기</span></a>
+      <a href="https://slides.new/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">P</span><div><h3>Google Slides</h3><p>포스터 편집 · 07차시</p></div><span>열기</span></a>
+      <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">G</span><div><h3>Gemini</h3><p>글 · 이미지 · 요청문 실습</p></div><span>열기</span></a>
+      <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">N</span><div><h3>Gemini Notebook</h3><p>원자료 기반 질문과 문항 · 06차시</p></div><span>열기</span></a>
+      <a href="https://vids.new/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">V</span><div><h3>Google Vids</h3><p>안내 영상 편집 · 08차시</p></div><span>열기</span></a>
+      <a href="https://www.notion.com/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">n</span><div><h3>Notion</h3><p>업무관리와 꾸러미 · 09·10차시</p></div><span>열기</span></a>
+      <a href="https://forms.new/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">F</span><div><h3>Google Forms</h3><p>확인 문항과 퀴즈 · 06차시</p></div><span>열기</span></a>
+      <a href="https://sites.new/" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">H</span><div><h3>Google Sites</h3><p>프로그램 소개 페이지 · 09·10차시</p></div><span>열기</span></a>
+      <a href="https://myaccount.google.com/security-checkup" target="_blank" rel="noopener noreferrer"><span class="tool-monogram">✓</span><div><h3>Google 보안 진단</h3><p>계정·기기·복구 정보 · 01차시</p></div><span>열기</span></a>
+    </div></section>
+    <footer class="page-footer"><p>호서대학교 앵커 늘봄학교 충남 1권역<br>초등방과후학교 강사 역량강화 연수</p><p>본 연수의 PPT는 2026년도 교육부 및 충청남도의 재원으로 충남앵커센터의 지원을 받아 수행된 지역성장 인재양성체계(앵커)의 결과입니다. (2026-ANCHOR-12-025)</p><p class="secondary">원고: 제공된 01–10차시 최종 PPT · 읽을거리 확인: 2026.10.09<br>메뉴 이름과 제공 기능은 계정·기관 정책·시기에 따라 달라질 수 있습니다.</p><a href="#manuscript">연수 처음으로</a></footer>
+  </main>
+  <aside class="page-outline" aria-label="현재 차시 안의 목차"><p>이 차시에서</p><nav id="section-outline"></nav><div class="outline-note"><span>실습 연결</span><a href="#practice">내 기준정보로<br>요청문 만들기</a></div></aside>
+  </div>
+  <dialog id="menu-dialog" class="menu-dialog"><div class="dialog-heading"><h2>연수 목차</h2><button class="small-button" data-close-dialog="menu-dialog" type="button" autofocus>닫기</button></div><nav aria-label="모바일 차시 목차">{{NAV}}</nav></dialog>
+  <dialog id="search-dialog" class="search-dialog"><div class="dialog-heading"><h2>원고와 읽을거리 검색</h2><button class="small-button" data-close-dialog="search-dialog" type="button">닫기</button></div><label class="sr-only" for="course-search">찾을 내용</label><input id="course-search" type="search" autocomplete="off" placeholder="예: 공유 권한, COUNTIF, 가정통신문" autofocus><p id="search-status" role="status">제목과 원고 본문에서 검색합니다.</p><ul id="search-results"></ul></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="application/json" id="course-data">{{DATA}}</script>
+</body>
+</html>
